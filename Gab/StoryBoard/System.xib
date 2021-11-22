@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="SystemMsg" id="ske-VY-fu9" customClass="ChattingCell" customModule="Gab" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ske-VY-fu9" id="iGt-QI-UaW">
+                <rect key="frame" x="0.0" y="0.0" width="390" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Pa7-7u-Iyt">
+                        <rect key="frame" x="20" y="8" width="217.5" height="27.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="수박바 님이 방송에 입장하였습니다." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eOA-N1-ysK">
+                                <rect key="frame" x="10" y="5" width="197.5" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="0.88282948729999999" blue="0.48201918599999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.49914646576338284" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eOA-N1-ysK" firstAttribute="leading" secondItem="Pa7-7u-Iyt" secondAttribute="leading" constant="10" id="1U7-ef-mpm"/>
+                            <constraint firstAttribute="bottom" secondItem="eOA-N1-ysK" secondAttribute="bottom" constant="4.5" id="1fW-ci-FY3"/>
+                            <constraint firstAttribute="height" constant="27.5" id="50e-U6-NQD"/>
+                            <constraint firstItem="eOA-N1-ysK" firstAttribute="top" secondItem="Pa7-7u-Iyt" secondAttribute="top" constant="5" id="e6k-6o-whY"/>
+                            <constraint firstAttribute="trailing" secondItem="eOA-N1-ysK" secondAttribute="trailing" constant="10" id="qKM-Ww-M6W"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Pa7-7u-Iyt" secondAttribute="bottom" constant="8.5" id="VJw-zh-O6d"/>
+                    <constraint firstItem="Pa7-7u-Iyt" firstAttribute="leading" secondItem="iGt-QI-UaW" secondAttribute="leading" constant="20" id="ht6-Gk-5Qr"/>
+                    <constraint firstItem="Pa7-7u-Iyt" firstAttribute="top" secondItem="iGt-QI-UaW" secondAttribute="top" constant="8" id="w4M-Em-0iH"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="systemMsg" destination="eOA-N1-ysK" id="lS0-eS-c8V"/>
+                <outlet property="systemView" destination="Pa7-7u-Iyt" id="eJa-z9-KtW"/>
+            </connections>
+            <point key="canvasLocation" x="-111.59420289855073" y="-184.15178571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
